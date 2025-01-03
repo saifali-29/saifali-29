@@ -100,11 +100,34 @@
             margin-bottom: 1rem;
         }
 
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent-color);
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: var(--hover-color);
+            color: #fff;
+            transform: translateY(-5px);
+        }
+
         footer {
             background: linear-gradient(135deg, var(--neon-color), var(--accent-color));
             color: #000;
             text-align: center;
             padding: 1.5rem 0;
+        }
+
+        .center-btn {
+            text-align: center;
+            margin: 2rem 0;
         }
     </style>
 </head>
@@ -155,38 +178,9 @@
             </ul>
         </section>
 
-        <section>
-            <h2>4. Optimizing Waste Management Routes (Suleman A)</h2>
-            <p>Improves waste collection efficiency to ensure urban hygiene and sustainability.</p>
-            <h3>Sustainable Goals</h3>
-            <ul>
-                <li>Lowers fuel consumption</li>
-                <li>Reduces operational costs</li>
-                <li>Prevents missed waste pickups</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>5. Monitoring Water Usage in Residential Areas (Varun & Vishal)</h2>
-            <p>Focuses on water conservation through smart monitoring and analytics.</p>
-            <h3>Sustainable Goals</h3>
-            <ul>
-                <li>Identifies wasteful water usage patterns</li>
-                <li>Promotes equitable water distribution</li>
-                <li>Aligns with SDG Goal 6</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>6. Optimizing City-Wide Internet Connectivity (Saif Ali)</h2>
-            <p>Addresses urban connectivity challenges to ensure digital inclusion and efficiency.</p>
-            <h3>Sustainable Goals</h3>
-            <ul>
-                <li>Supports digital inclusion</li>
-                <li>Reduces energy consumption</li>
-                <li>Improves remote work opportunities</li>
-            </ul>
-        </section>
+        <div class="center-btn">
+            <a href="city.html" class="btn">Know More About City</a>
+        </div>
     </main>
 
     <footer>
