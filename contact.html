@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Suleman Agasimani</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #000000;
+            --text-color: #e0e0e0;
+            --header-bg: #1a73e8;
+            --section-bg: #222222;
+            --highlight-color: #64ffda;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: var(--header-bg);
+            padding: 2rem 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        main {
+            padding: 3rem 0;
+        }
+
+        section {
+            background-color: var(--section-bg);
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: var(--highlight-color);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        input, textarea {
+            padding: 0.5rem;
+            border-radius: 4px;
+            border: 1px solid var(--text-color);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        button {
+            padding: 0.5rem 1rem;
+            background-color: var(--highlight-color);
+            color: var(--bg-color);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45c7b3;
+        }
+
+        footer {
+            background-color: var(--section-bg);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Me</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="project.html">Projects</a>
+                <a href="learning.html">Learning Outcomes</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="email-form">
+            <h2>Send Me a Message</h2>
+            <p>Please email me at <strong>01fe23bci008@kletech.ac.in</strong>.</p>
+        </section>
+
+        <section id="like-section">
+            <h2>Like This Page</h2>
+            <button id="likeButton">
+                <i class="fas fa-heart"></i> <span id="likeCount">0</span> Likes
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Saif Ali. All rights reserved.</p>
+        </div>
+    </footer>
