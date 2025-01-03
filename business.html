@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart City Urban Planning Project - Saif Ali</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --neon-color: #00ffa3;
+            --text-color: #ffffff;
+            --accent-color: #ff6d00;
+            --hover-color: #ff4500;
+            --highlight-color: #00d4ff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--neon-color), var(--accent-color));
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #000;
+            text-shadow: 0 0 10px var(--text-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            font-size: 1.1rem;
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--neon-color);
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            background: var(--neon-color);
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background: var(--card-bg);
+            border: 2px solid var(--highlight-color);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+            overflow: hidden;
+            transform: perspective(1000px) rotateX(0deg);
+            transition: transform 0.4s ease-in-out;
+        }
+
+        section:hover {
+            transform: perspective(1000px) rotateX(-10deg);
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: -10%;
+            left: -10%;
+            width: 120%;
+            height: 120%;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.1));
+            filter: blur(50px);
+            z-index: -1;
+            transform: rotate(45deg);
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: var(--neon-color);
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            color: var(--highlight-color);
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+            font-family: 'Rajdhani', sans-serif;
+        }
+
+        ul {
+            list-style: square;
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background: var(--accent-color);
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: var(--hover-color);
+            color: #fff;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: linear-gradient(135deg, var(--neon-color), var(--accent-color));
+            color: #000;
+            text-align: center;
+            padding: 1.5rem 0;
+            box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--card-bg);
+            border: 2px solid var(--neon-color);
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            color: var(--neon-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.3s ease-in-out;
+        }
+
+        .theme-toggle:hover {
+            background: var(--neon-color);
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Smart City Urban Planning Project</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+                <li><a href="learning.html">Learning Outcomes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="predicting-optimal-routes">
+            <h2>Predicting Optimal Tourist Routes (Varun T)</h2>
+            <p>Develops a system leveraging real-time data to recommend ideal tourist routes.</p>
+            <h3>Sustainable Goals</h3>
+            <ul>
+                <li>Distributes tourism traffic evenly</li>
+                <li>Encourages sustainable transport modes</li>
+                <li>Enhances accessibility to heritage sites</li>
+            </ul>
+        </section>
+        <!-- Repeat for all sections -->
+        <section>
+            <a href="city.html" class="btn">Explore the City</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;Saif Ali. All rights reserved.</p>
+    </footer>
+
+    <button class="theme-toggle">🌙</button>
+
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+</html>
