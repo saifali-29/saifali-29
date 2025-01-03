@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saif Ali - Kwin city project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Rajdhani:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --card-bg: #1c1c1c;
+            --neon-green: #00ff99;
+            --neon-blue: #00d4ff;
+            --neon-pink: #ff0077;
+            --text-color: #ffffff;
+            --button-bg: #121212;
+            --button-hover: #303030;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Rajdhani', sans-serif;
+            background: radial-gradient(circle at center, #050505, #0a0a0a 70%);
+            color: var(--text-color);
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 1.5rem 2rem;
+            background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--neon-green);
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: var(--neon-green);
+            background: var(--neon-green);
+            transform: scale(1.1);
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3rem;
+            color: var(--neon-blue);
+            text-shadow: 0 0 15px var(--neon-blue), 0 0 25px var(--neon-pink);
+            margin-bottom: 2rem;
+        }
+
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .project-item {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 10px var(--neon-green);
+            transition: transform 0.3s, box-shadow 0.3s;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .project-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8), 0 0 20px var(--neon-pink);
+        }
+
+        .project-item h2 {
+            font-size: 1.8rem;
+            color: var(--neon-blue);
+            margin-bottom: 1rem;
+        }
+
+        .project-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            font-weight: bold;
+            color: var(--text-color);
+            text-decoration: none;
+            background: var(--button-bg);
+            border: 2px solid var(--neon-pink);
+            border-radius: 8px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: var(--button-hover);
+            color: var(--neon-pink);
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px var(--neon-pink);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1rem;
+            background: var(--card-bg);
+            color: var(--text-color);
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.5), 0 -1px 5px var(--neon-blue);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: var(--button-bg);
+            border: 2px solid var(--neon-green);
+            border-radius: 50%;
+            color: var(--neon-green);
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .theme-toggle:hover {
+            background: var(--button-hover);
+            color: var(--neon-pink);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html" class="active">Projects</a></li>
+                <li><a href="learning.html">Learning Outcomes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kwin city project</h1>
+        <div class="project-grid">
+            <div class="project-item">
+                <h2>Project 1: Kwin City</h2>
+                <p>
+                    <strong>Kwin City</strong>: A futuristic smart city powered by algorithms like Dijkstra's, greedy methods, and dynamic programming. The project emphasizes sustainable and efficient urban development.
+                </p>
+                <a href="business.html" class="btn">Know More</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Saif Ali. All rights reserved.</p>
+    </footer>
+
+    <button class="theme-toggle" aria-label="Toggle theme">🌙</button>
+</body>
+</html>
